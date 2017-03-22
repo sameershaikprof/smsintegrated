@@ -41,6 +41,19 @@ app.get("/secret",isLoggedIn, function(req, res){
    res.render("secret");
 });
 
+app.get("/humidity",function(req,res){
+
+  res.render("humidity");
+});
+app.get("/temp",function(req,res){
+
+  res.render("temp");
+});
+app.get("/about",function(req,res){
+
+  res.render("about");
+});
+
 // Auth Routes
 
 //show sign up form
